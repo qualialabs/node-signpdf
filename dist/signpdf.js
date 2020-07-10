@@ -28,6 +28,10 @@ class SignPdf {
     this.lastSignature = null;
   }
 
+  helpers() {
+    return _helpers;
+  }
+  
   sign(pdfBuffer, p12Buffer, additionalOptions = {}) {
     const options = {
       asn1StrictParsing: false,
